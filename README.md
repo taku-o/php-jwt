@@ -118,6 +118,13 @@ echo "Decode:\n" . print_r($decoded_array, true) . "\n";
 Changelog
 ---------
 
+#### 5.0.1 / 2019-09-20
+- Fork from firebase/php-jwt
+- Support ES256 and HS512.
+  See [#239](https://github.com/firebase/php-jwt/pull/239). Thanks [@beamerblvd](https://github.com/beamerblvd)!
+- Encoding JWTs adds escape slashes before base64 encoding
+  See [#226](https://github.com/firebase/php-jwt/issues/226). Thanks [@johnrhunt](https://github.com/johnrhunt)!
+
 #### 5.0.0 / 2017-06-26
 - Support RS384 and RS512.
   See [#117](https://github.com/firebase/php-jwt/pull/117). Thanks [@joostfaassen](https://github.com/joostfaassen)!
